@@ -28,3 +28,9 @@
     opacity: 0.3;
     mix-blend-mode: color;
 }
+footer{
+    background-color: var(--green);
+}
+a{
+    color: ;
+}

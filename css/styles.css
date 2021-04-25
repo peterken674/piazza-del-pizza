@@ -5,6 +5,9 @@
     --green: #50a183;
     --maroon: #ae3324;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 *{
     font-family: 'Roboto', 'Open Sans', sans-serif;
 }
@@ -31,7 +34,7 @@ footer{
 }
 .content{
     position: relative;
-    margin-top: -4em;
+    margin-top: -7em;
     z-index: 1000;
 }
 .card{
@@ -42,4 +45,79 @@ footer{
 .banner h1{
     font-weight: 700;
     font-size: 3rem;
+}
+.price-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.plus-icon{
+    background-color: hsla(42, 93%, 62%, 0.3);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 0;
+    font-weight: 300;
+}
+
+.minus-sign{
+    background-color: hsla(7, 66%, 41%, 0.3);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    color: var(--maroon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 0;
+    font-weight: 300;
+}
+.green-sign{
+    background-color: hsla(158, 34%, 47%, 0.3);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 0;
+    font-weight: 300;
+}
+.list{
+    height: 70%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.second-row{
+    height: 10vh;
+}
+#yourOrder,
+#pizzaSizes{
+    height: 45vh;
+}
+#total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--orange);
+    width: 86%;
+    justify-self: center;
+}
+#pizzaSizes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#pizzaSizes>div{
+    width: 100%;
 }

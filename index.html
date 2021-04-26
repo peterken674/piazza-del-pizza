@@ -65,7 +65,7 @@
                         </div>
                     </button>
 
-                    <!-- Modal -->
+                    <!-- Small Pizza Modal -->
                     <div class="modal fade" id="mySmallModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle"
                         aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -90,45 +90,48 @@
                                             </div>
                                         </div>
                                         <div class="form">
-                                            <form>
+                                            <form id="crustAndToppingForm1">
                                                 <div class="form-group">
                                                     <label for="crust">Select Crust</label>
-                                                    <select class="form-control" name="crust" id="crust">
+                                                    <select class="form-control" name="crust" id="crustSmall">
                                                         <option value="" default disabled></option>
-                                                        <option>
+                                                        <option value="Neapolitan Pizza Crust">
                                                             Neapolitan Pizza Crust (+KES 250.00)
                                                         </option>
-                                                        <option>
+                                                        <option value="New York-Style Pizza Crust">
                                                             New York-Style Pizza Crust (+KES 220.00)
                                                         </option>
-                                                        <option>
+                                                        <option value="St. Louis Pizza Crust">
                                                             St. Louis Pizza Crust (+KES 260.00)
                                                         </option>
-                                                        <option>Flatbread Crust (+KES 170.00)</option>
+                                                        <option value="Flatbread Crust">Flatbread Crust (+KES 170.00)</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="toppings">Select Toppings</label>
-                                                    <select class="form-control" name="toppings" id="toppings">
+                                                    <select class="form-control" name="toppings" id="toppingsSmall">
                                                         <option value="" default disabled></option>
-                                                        <option>Pepperoni (+KES 100.00)</option>
-                                                        <option>Supreme (+KES 200.00)</option>
-                                                        <option>
+                                                        <option value="Pepperoni">Pepperoni (+KES 100.00)</option>
+                                                        <option value="Supreme">Supreme (+KES 200.00)</option>
+                                                        <option value="Hawaiian (Ham & Pineapple">
                                                             Hawaiian (Ham & Pineapple (+KES 120.00)
                                                         </option>
-                                                        <option>BBQ Meatlovers (+KES 160.00)</option>
+                                                        <option value="BBQ Meatlovers">BBQ Meatlovers (+KES 160.00)</option>
                                                     </select>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-secondary"
+                                                        data-dismiss="modal">
+                                                        Cancel
+                                                    </button>
+                                                    <button type="submit" class="btn btn-success"
+                                                        id="btnPersonalizeSave1">Save</button>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                        Cancel
-                                    </button>
-                                    <button type="button" class="btn btn-success">Save</button>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -172,33 +175,33 @@
                                             </div>
                                         </div>
                                         <div class="form">
-                                            <form>
+                                            <form id="crustAndToppingForm2">
                                                 <div class="form-group">
                                                     <label for="crust">Select Crust</label>
-                                                    <select class="form-control" name="crust" id="crust">
+                                                    <select class="form-control" name="crust" id="crustMedium">
                                                         <option value="" default disabled></option>
-                                                        <option>
+                                                        <option value="Neapolitan Pizza Crust">
                                                             Neapolitan Pizza Crust (+KES 250.00)
                                                         </option>
-                                                        <option>
+                                                        <option value="New York-Style Pizza Crust">
                                                             New York-Style Pizza Crust (+KES 220.00)
                                                         </option>
-                                                        <option>
+                                                        <option value="St. Louis Pizza Crust">
                                                             St. Louis Pizza Crust (+KES 260.00)
                                                         </option>
-                                                        <option>Flatbread Crust (+KES 170.00)</option>
+                                                        <option value="Flatbread Crust">Flatbread Crust (+KES 170.00)</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="toppings">Select Toppings</label>
                                                     <select class="form-control" name="toppings" id="toppings">
                                                         <option value="" default disabled></option>
-                                                        <option>Pepperoni (+KES 100.00)</option>
-                                                        <option>Supreme (+KES 200.00)</option>
-                                                        <option>
+                                                        <option value="Pepperoni">Pepperoni (+KES 100.00)</option>
+                                                        <option value="Supreme">Supreme (+KES 200.00)</option>
+                                                        <option value="Hawaiian (Ham & Pineapple">
                                                             Hawaiian (Ham & Pineapple (+KES 120.00)
                                                         </option>
-                                                        <option>BBQ Meatlovers (+KES 160.00)</option>
+                                                        <option value="BBQ Meatlovers">BBQ Meatlovers (+KES 160.00)</option>
                                                     </select>
                                                 </div>
                                             </form>
@@ -206,10 +209,10 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">
                                         Cancel
                                     </button>
-                                    <button type="button" class="btn btn-success">Save</button>
+                                    <button type="submit" class="btn btn-success" id="btnPersonalizeSave2">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -252,33 +255,33 @@
                                             </div>
                                         </div>
                                         <div class="form">
-                                            <form>
+                                            <form id="crustAndToppingForm3">
                                                 <div class="form-group">
                                                     <label for="crust">Select Crust</label>
-                                                    <select class="form-control" name="crust" id="crust">
+                                                    <select class="form-control" name="crust" id="crustLarge">
                                                         <option value="" default disabled></option>
-                                                        <option>
+                                                        <option value="Neapolitan Pizza Crust">
                                                             Neapolitan Pizza Crust (+KES 250.00)
                                                         </option>
-                                                        <option>
+                                                        <option value="New York-Style Pizza Crust">
                                                             New York-Style Pizza Crust (+KES 220.00)
                                                         </option>
-                                                        <option>
+                                                        <option value="St. Louis Pizza Crust">
                                                             St. Louis Pizza Crust (+KES 260.00)
                                                         </option>
-                                                        <option>Flatbread Crust (+KES 170.00)</option>
+                                                        <option value="Flatbread Crust">Flatbread Crust (+KES 170.00)</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="toppings">Select Toppings</label>
                                                     <select class="form-control" name="toppings" id="toppings">
                                                         <option value="" default disabled></option>
-                                                        <option>Pepperoni (+KES 100.00)</option>
-                                                        <option>Supreme (+KES 200.00)</option>
-                                                        <option>
+                                                        <option value="Pepperoni">Pepperoni (+KES 100.00)</option>
+                                                        <option value="Supreme">Supreme (+KES 200.00)</option>
+                                                        <option value="Hawaiian (Ham & Pineapple">
                                                             Hawaiian (Ham & Pineapple (+KES 120.00)
                                                         </option>
-                                                        <option>BBQ Meatlovers (+KES 160.00)</option>
+                                                        <option value="BBQ Meatlovers">BBQ Meatlovers (+KES 160.00)</option>
                                                     </select>
                                                 </div>
                                             </form>
@@ -286,10 +289,10 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">
                                         Cancel
                                     </button>
-                                    <button type="button" class="btn btn-success">Save</button>
+                                    <button type="submit" class="btn btn-success" id="btnPersonalizeSave3">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -297,82 +300,10 @@
                 </div>
                 <div class="col-md-6 card p-3" id="yourOrder">
                     <h3>Your Order</h3>
-                    <div class="list">
-                        <div class="row">
-                            <div class="col-2">
-                                <p class="fs-5 mb-0">1x</p>
-                                <div class="minus-icon">
-                                    <div class="minus-sign text-center">-</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <p class="fs-5 mb-0">Small Classic Pizza</p>
-                                <small>BBQ Steak, Pepperoni</small>
-                            </div>
-                            <div class="col-4 order-price">
-                                <p class="fs-5 mb-0">Ksh. 400.00</p>
-                                <div class="green-sign">
-                                    <div class="plus-sign text-center">+</div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col-2">
-                                <p class="fs-5 mb-0">1x</p>
-                                <div class="minus-icon">
-                                    <div class="minus-sign text-center">-</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <p class="fs-5 mb-0">Small Classic Pizza</p>
-                                <small>BBQ Steak, Pepperoni</small>
-                            </div>
-                            <div class="col-4 order-price">
-                                <p class="fs-5 mb-0">Ksh. 400.00</p>
-                                <div class="green-sign">
-                                    <div class="plus-sign text-center">+</div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col-2">
-                                <p class="fs-5 mb-0">1x</p>
-                                <div class="minus-icon">
-                                    <div class="minus-sign text-center">-</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <p class="fs-5 mb-0">Small Classic Pizza</p>
-                                <small>BBQ Steak, Pepperoni</small>
-                            </div>
-                            <div class="col-4 order-price">
-                                <p class="fs-5 mb-0">Ksh. 400.00</p>
-                                <div class="green-sign">
-                                    <div class="plus-sign text-center">+</div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col-2">
-                                <p class="fs-5 mb-0">1x</p>
-                                <div class="minus-icon">
-                                    <div class="minus-sign text-center">-</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <p class="fs-5 mb-0">Small Classic Pizza</p>
-                                <small>BBQ Steak, Pepperoni</small>
-                            </div>
-                            <div class="col-4 order-price">
-                                <p class="fs-5 mb-0">Ksh. 400.00</p>
-                                <div class="green-sign">
-                                    <div class="plus-sign text-center">+</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="list">
+                        
+                        
+                        
                     </div>
                     <div id="total">
                         <div class="text-uppercase">Total</div>
@@ -381,7 +312,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" id="btnPrcCheckout"
                         class="btn btn-warning mt-3 text-uppercase text-white text-cente" data-toggle="modal"
-                        data-target="#checkoutModal">
+                        data-target="#checkoutModal">   
                         Proceed to Checkout
                     </button>
 
@@ -470,8 +401,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group mt-4">
-                                          <input type="text" name="location" id="location" class="form-control" placeholder="e.g. Roysambu, Nairobi">
-                                          
+                                            <input type="text" name="location" id="location" class="form-control"
+                                                placeholder="e.g. Roysambu, Nairobi">
+
                                         </div>
 
                                     </div>

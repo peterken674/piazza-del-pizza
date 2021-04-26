@@ -96,7 +96,7 @@ footer{
     line-height: 0;
     font-weight: 300;
 }
-.list{
+#list{
     height: 70%;
     overflow-x: hidden;
     overflow-y: auto;

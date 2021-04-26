@@ -121,11 +121,6 @@
 															name="crust"
 															id="crustSmall"
 														>
-															<option
-																value="no crust"
-																selected
-																disabled
-															></option>
 															<option value="Neapolitan Pizza Crust">
 																Neapolitan Pizza Crust (+KES 250.00)
 															</option>
@@ -147,11 +142,6 @@
 															name="toppingsSmall"
 															id="toppingsSmall"
 														>
-															<option
-																value="no toppings"
-																selected
-																disabled
-															></option>
 															<option value="Pepperoni">
 																Pepperoni (+KES 100.00)
 															</option>
@@ -256,11 +246,6 @@
 															name="crust"
 															id="crustMedium"
 														>
-															<option
-																value="no crust"
-																selected
-																disabled
-															></option>
 															<option value="Neapolitan Pizza Crust">
 																Neapolitan Pizza Crust (+KES 250.00)
 															</option>
@@ -282,11 +267,6 @@
 															name="toppingsMedium"
 															id="toppingsMedium"
 														>
-															<option
-																value="no toppings"
-																selected
-																disabled
-															></option>
 															<option value="Pepperoni">
 																Pepperoni (+KES 100.00)
 															</option>
@@ -389,11 +369,6 @@
 															name="crust"
 															id="crustLarge"
 														>
-															<option
-																value="no crust"
-																selected
-																disabled
-															></option>
 															<option value="Neapolitan Pizza Crust">
 																Neapolitan Pizza Crust (+KES 250.00)
 															</option>
@@ -415,11 +390,6 @@
 															name="toppings"
 															id="toppingsLarge"
 														>
-															<option
-																value="no toppings"
-																selected
-																disabled
-															></option>
 															<option value="Pepperoni">
 																Pepperoni (+KES 100.00)
 															</option>
@@ -487,7 +457,7 @@
 							aria-labelledby="modalTitle"
 							aria-hidden="true"
 						>
-							<div class="modal-dialog" role="document">
+							<div class="modal-dialog" role="document" id="checkout">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title">Checkout</h5>
@@ -528,7 +498,7 @@
 													<button
 														type="button"
 														class="btn btn-outline-success btn-block text-uppercase text-center"
-                                                        id="pickup"
+														id="pickup"
 													>
 														Pickup
 													</button>
@@ -537,7 +507,7 @@
 													<button
 														type="button"
 														class="btn btn-outline-success btn-block text-uppercase text-center"
-                                                        id="delivery"
+														id="delivery"
 													>
 														Delivery
 													</button>
@@ -550,7 +520,7 @@
 													id="location"
 													class="form-control"
 													placeholder="e.g. Roysambu, Nairobi"
-                                                    required
+													required
 												/>
 											</div>
 										</div>
@@ -564,7 +534,7 @@
 											Cancel
 										</button>
 										<button
-											type="button"
+											type="submit"
 											class="btn btn-success"
 											id="btnCheckout"
 										>

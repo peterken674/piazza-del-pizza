@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
     $('#btnPersonalizeSave2').click(function (event) {
         let inputSize = "Medium Classic Pizza";
-        let inputSizeCost = parseInt(245);
+        let inputSizeCost = parseInt(650);
         let inputCrust = $('#crustMedium').val();
         if (inputCrust == "Neapolitan Pizza Crust") {
             var inputCrustCost = parseInt(250);
@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
     $('#btnPersonalizeSave3').click(function (event) {
         let inputSize = "Large Classic Pizza";
-        let inputSizeCost = parseInt(245);
+        let inputSizeCost = parseInt(1400);
         let inputCrust = $('#crustLarge').val();
         if (inputCrust == "Neapolitan Pizza Crust") {
             var inputCrustCost = parseInt(250);
@@ -135,9 +135,45 @@ $(document).ready(function () {
 
     });
 
+    let delivery = false;
+    let pickup = false;
     $('#delivery').click(function(){
-        alert("Please note that delivery will cost you an extra KES 200.00");
-        totalCost += 200;
-        $('.totalCost').html(totalCost);
+        if (!delivery){
+            alert("Please note that delivery will cost you an extra KES 200.00");
+            totalCost += 200;
+            $('.totalCost').html(totalCost);
+            delivery = true;
+        }else{
+            alert("Delivery charges have already been applied.")
+        }
+    });
+
+    $('#pickup').click(function () {
+        if (!pickup) {
+            pickup = true;
+            if (delivery){
+                totalCost -= 200;
+                delivery = false;
+                $('.totalCost').html(totalCost);
+            }
+        }
+    });
+
+    $('#btnCheckout').click(function (event) {
+        let location = $('#location').val();
+        if(location !== ""){
+            if(delivery){
+                alert("Your order will be delivered at " + location + ". Total cost is KES " + totalCost + ".00");
+                $(this).prev().click();
+            }else if(pickup){
+                alert("Your can pick your order at our nearest outlet in " + location + ". Total cost is KES " + totalCost + ".00");
+                $(this).prev().click();
+            }else{
+                alert("Please select whether you want delivery or you would prefer to pick up your order.")
+            }
+        }else{
+            alert("Please input a delivery location.")
+        }
+        event.preventDefault();
     });
 });

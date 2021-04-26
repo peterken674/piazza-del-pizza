@@ -114,7 +114,6 @@ footer{
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--orange);
-    width: 86%;
     justify-self: center;
 }
 #pizzaSizes{
@@ -140,4 +139,27 @@ footer{
 }
 .modal-price{
     font-weight: 700;
+}
+#btnPrcCheckout{
+    text-align: center !important;
+}
+.delivery-option{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.delivery-option div{
+    width: 50%;
+    margin-top: 1rem;
+}
+.delivery-option button{
+    border-radius: 50px;
+}
+#location{
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: grey;
+}
+#location:focus{
+    border-color: var(--green);
 }

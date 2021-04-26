@@ -137,12 +137,13 @@ $(document).ready(function () {
 
     let delivery = false;
     let pickup = false;
-    $('#delivery').click(function(){
+    $('#delivery').click(function(e){
         if (!delivery){
             alert("Please note that delivery will cost you an extra KES 200.00");
             totalCost += 200;
             $('.totalCost').html(totalCost);
             delivery = true;
+            e.preventDefault();
         }else{
             alert("Delivery charges have already been applied.")
         }

@@ -1,172 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Piazza del Pizza</title>
-		<!-- Styling -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="css/styles.css" />
-		<!-- Scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<!-- Header -->
-			<header class="row">
-				<div class="top-bar">
-					<p class="pt-3 text-uppercase text-center text-white">
-						Piazza del Pizza
-					</p>
-				</div>
-				<div class="header-bg">
-					<div class="overlay"></div>
-				</div>
-			</header>
-			<!-- Content -->
-			<section class="container content">
-				<div class="row card py-5 px-4">
-					<h1>It's the Pizza Square!</h1>
-					<p>
-						No, our pizzas are not actually square, but we will definitely
-						square your order away. Just tell us what, and how much you are
-						craving below.
-					</p>
-				</div>
-				<div class="row mt-4 justify-content-between second-row">
-					<div class="col-lg-5 align-items-center" id="pizzaSizes">
-						<div class="row card small-pizza p-3">
-							<h3>Small Classic Pizza</h3>
-							<div class="price-size">
-								<div>KES 245.00</div>
-								<div class="plus-icon">
-									<div class="plus-sign text-center">+</div>
-								</div>
-							</div>
-						</div>
-						<div class="row card medium-pizza p-3">
-							<h3>Medium Classic Pizza</h3>
-							<div class="price-size">
-								<div>KES 650.00</div>
-								<div class="plus-icon">
-									<div class="plus-sign text-center">+</div>
-								</div>
-							</div>
-						</div>
-						<div class="row card large-pizza p-3">
-							<h3>Large Classic Pizza</h3>
-							<div class="price-size">
-								<div>KES 1,400.00</div>
-								<div class="plus-icon">
-									<div class="plus-sign text-center">+</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 card p-3" id="yourOrder">
-						<h3>Your Order</h3>
-						<div class="list">
-							<div class="row">
-								<div class="col-2">
-									<p class="fs-5 mb-0">1x</p>
-									<div class="minus-icon">
-										<div class="minus-sign text-center">-</div>
-									</div>
-								</div>
-								<div class="col-6">
-									<p class="fs-5 mb-0">Small Classic Pizza</p>
-									<small>BBQ Steak, Pepperoni</small>
-								</div>
-								<div class="col-4 order-price">
-									<p class="fs-5 mb-0">Ksh. 400.00</p>
-									<div class="green-sign">
-										<div class="plus-sign text-center">+</div>
-									</div>
-								</div>
-							</div>
-							<hr />
-							<div class="row">
-								<div class="col-2">
-									<p class="fs-5 mb-0">1x</p>
-									<div class="minus-icon">
-										<div class="minus-sign text-center">-</div>
-									</div>
-								</div>
-								<div class="col-6">
-									<p class="fs-5 mb-0">Small Classic Pizza</p>
-									<small>BBQ Steak, Pepperoni</small>
-								</div>
-								<div class="col-4 order-price">
-									<p class="fs-5 mb-0">Ksh. 400.00</p>
-									<div class="green-sign">
-										<div class="plus-sign text-center">+</div>
-									</div>
-								</div>
-							</div>
-							<hr />
-							<div class="row">
-								<div class="col-2">
-									<p class="fs-5 mb-0">1x</p>
-									<div class="minus-icon">
-										<div class="minus-sign text-center">-</div>
-									</div>
-								</div>
-								<div class="col-6">
-									<p class="fs-5 mb-0">Small Classic Pizza</p>
-									<small>BBQ Steak, Pepperoni</small>
-								</div>
-								<div class="col-4 order-price">
-									<p class="fs-5 mb-0">Ksh. 400.00</p>
-									<div class="green-sign">
-										<div class="plus-sign text-center">+</div>
-									</div>
-								</div>
-							</div>
-							<hr />
-							<div class="row">
-								<div class="col-2">
-									<p class="fs-5 mb-0">1x</p>
-									<div class="minus-icon">
-										<div class="minus-sign text-center">-</div>
-									</div>
-								</div>
-								<div class="col-6">
-									<p class="fs-5 mb-0">Small Classic Pizza</p>
-									<small>BBQ Steak, Pepperoni</small>
-								</div>
-								<div class="col-4 order-price">
-									<p class="fs-5 mb-0">Ksh. 400.00</p>
-									<div class="green-sign">
-										<div class="plus-sign text-center">+</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="total">
-							<div class="text-uppercase">Total</div>
-							<div class="text-uppercase">KES 1,740.00</div>
-						</div>
-						<a
-							name=""
-							id="p
-                        btnPrcCheckout"
-							class="btn btn-warning mt-3 text-uppercase text-white"
-							href="#"
-							role="button"
-							>Proceed to Checkout</a
-						>
-					</div>
-				</div>
-			</section>
-			<!-- Footer -->
-			<footer class="row fixed-bottom align-items-center">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piazza del Pizza</title>
+    <!-- Styling -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="row">
+            <div class="top-bar">
+                <p class="pt-3 text-uppercase text-center text-white">
+                    Piazza del Pizza
+                </p>
+            </div>
+            <div class="header-bg">
+                <div class="overlay"></div>
+            </div>
+        </header>
+        <!-- Content -->
+        <section class="container content mb-sm-5">
+            <div class="row card py-5 px-4">
+                <h1>It's the Pizza Square!</h1>
+                <p>
+                    No, our pizzas are not actually square, but we will definitely
+                    square your order away. Just tell us what, and how much you are
+                    craving below.
+                </p>
+            </div>
+            <div class="row mt-4 justify-content-between second-row">
+                <div class="col-md-5 align-items-center" id="pizzaSizes">
+                    <!--===========================================  -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target="#mySmallModal">
+                        <div class="row card small-pizza p-3">
+                            <h3>Small Classic Pizza</h3>
+                            <div class="price-size">
+                                <div>KES 245.00</div>
+                                <div class="plus-icon">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="mySmallModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Personalize Your Order</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="picdesc">
+                                            <div class="pic">
+                                                <img class="img-fluid"
+                                                    src="https://images.unsplash.com/photo-1590083745251-4fdb0b285c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80"
+                                                    alt="Small Pizza" srcset="" />
+                                            </div>
+                                            <div class="desc">
+                                                <p>Small Classic Pizza</p>
+                                                <p class="modal-price">KES 245.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <form>
+                                                <div class="form-group">
+                                                  <label for="crust">Select Crust</label>
+                                                  <select class="form-control" name="crust" id="crust">
+                                                      <option value="" default disabled></option>
+                                                    <option>Neapolitan Pizza Crust (+KES 250.00)</option>
+                                                    <option>New York-Style Pizza Crust (+KES 220.00)</option>
+                                                    <option>St. Louis Pizza Crust (+KES 260.00)</option>
+                                                    <option>Flatbread Crust (+KES 170.00)</option>
+                                                  </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="toppings">Select Toppings</label>
+                                                  <select class="form-control" name="toppings" id="toppings">
+                                                      <option value="" default disabled></option>
+                                                    <option>Pepperoni (+KES 100.00)</option>
+                                                    <option>Supreme (+KES 200.00)</option>
+                                                    <option>Hawaiian (Ham & Pineapple (+KES 120.00)</option>
+                                                    <option>BBQ Meatlovers (+KES 160.00)</option>
+                                                  </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===========================================  -->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target="#myMediumModal">
+                        <div class="row card small-pizza p-3">
+                            <h3>Medium Classic Pizza</h3>
+                            <div class="price-size">
+                                <div>KES 650.00</div>
+                                <div class="plus-icon">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myMediumModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Personalize Your Order</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="picdesc">
+                                            <div class="pic">
+                                                <img class="img-fluid"
+                                                    src="https://images.unsplash.com/photo-1590083745251-4fdb0b285c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80"
+                                                    alt="Small Pizza" srcset="" />
+                                            </div>
+                                            <div class="desc">
+                                                <p>Medium Classic Pizza</p>
+                                                <p class="modal-price">KES 650.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <form>
+                                                <div class="form-group">
+                                                  <label for="crust">Select Crust</label>
+                                                  <select class="form-control" name="crust" id="crust">
+                                                      <option value="" default disabled></option>
+                                                    <option>Neapolitan Pizza Crust (+KES 250.00)</option>
+                                                    <option>New York-Style Pizza Crust (+KES 220.00)</option>
+                                                    <option>St. Louis Pizza Crust (+KES 260.00)</option>
+                                                    <option>Flatbread Crust (+KES 170.00)</option>
+                                                  </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="toppings">Select Toppings</label>
+                                                  <select class="form-control" name="toppings" id="toppings">
+                                                      <option value="" default disabled></option>
+                                                    <option>Pepperoni (+KES 100.00)</option>
+                                                    <option>Supreme (+KES 200.00)</option>
+                                                    <option>Hawaiian (Ham & Pineapple (+KES 120.00)</option>
+                                                    <option>BBQ Meatlovers (+KES 160.00)</option>
+                                                  </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target="#myLargeModal">
+                        <div class="row card small-pizza p-3">
+                            <h3>Large Classic Pizza</h3>
+                            <div class="price-size">
+                                <div>KES 1,400.00</div>
+                                <div class="plus-icon">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myLargeModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Personalize Your Order</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="picdesc">
+                                            <div class="pic">
+                                                <img class="img-fluid"
+                                                    src="https://images.unsplash.com/photo-1590083745251-4fdb0b285c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80"
+                                                    alt="Small Pizza" srcset="" />
+                                            </div>
+                                            <div class="desc">
+                                                <p>Large Classic Pizza</p>
+                                                <p class="modal-price">KES 1,400.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <form>
+                                                <div class="form-group">
+                                                  <label for="crust">Select Crust</label>
+                                                  <select class="form-control" name="crust" id="crust">
+                                                      <option value="" default disabled></option>
+                                                    <option>Neapolitan Pizza Crust (+KES 250.00)</option>
+                                                    <option>New York-Style Pizza Crust (+KES 220.00)</option>
+                                                    <option>St. Louis Pizza Crust (+KES 260.00)</option>
+                                                    <option>Flatbread Crust (+KES 170.00)</option>
+                                                  </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="toppings">Select Toppings</label>
+                                                  <select class="form-control" name="toppings" id="toppings">
+                                                      <option value="" default disabled></option>
+                                                    <option>Pepperoni (+KES 100.00)</option>
+                                                    <option>Supreme (+KES 200.00)</option>
+                                                    <option>Hawaiian (Ham & Pineapple (+KES 120.00)</option>
+                                                    <option>BBQ Meatlovers (+KES 160.00)</option>
+                                                  </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-success">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 card p-3" id="yourOrder">
+                    <h3>Your Order</h3>
+                    <div class="list">
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="fs-5 mb-0">1x</p>
+                                <div class="minus-icon">
+                                    <div class="minus-sign text-center">-</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs-5 mb-0">Small Classic Pizza</p>
+                                <small>BBQ Steak, Pepperoni</small>
+                            </div>
+                            <div class="col-4 order-price">
+                                <p class="fs-5 mb-0">Ksh. 400.00</p>
+                                <div class="green-sign">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="fs-5 mb-0">1x</p>
+                                <div class="minus-icon">
+                                    <div class="minus-sign text-center">-</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs-5 mb-0">Small Classic Pizza</p>
+                                <small>BBQ Steak, Pepperoni</small>
+                            </div>
+                            <div class="col-4 order-price">
+                                <p class="fs-5 mb-0">Ksh. 400.00</p>
+                                <div class="green-sign">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="fs-5 mb-0">1x</p>
+                                <div class="minus-icon">
+                                    <div class="minus-sign text-center">-</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs-5 mb-0">Small Classic Pizza</p>
+                                <small>BBQ Steak, Pepperoni</small>
+                            </div>
+                            <div class="col-4 order-price">
+                                <p class="fs-5 mb-0">Ksh. 400.00</p>
+                                <div class="green-sign">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="fs-5 mb-0">1x</p>
+                                <div class="minus-icon">
+                                    <div class="minus-sign text-center">-</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs-5 mb-0">Small Classic Pizza</p>
+                                <small>BBQ Steak, Pepperoni</small>
+                            </div>
+                            <div class="col-4 order-price">
+                                <p class="fs-5 mb-0">Ksh. 400.00</p>
+                                <div class="green-sign">
+                                    <div class="plus-sign text-center">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="total">
+                        <div class="text-uppercase">Total</div>
+                        <div class="text-uppercase">KES 1,740.00</div>
+                    </div>
+                    <a name="" id="p
+                        btnPrcCheckout" class="btn btn-warning mt-3 text-uppercase text-white" href="#"
+                        role="button">Proceed to Checkout</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <!-- <footer class="row fixed-bottom align-items-center">
 				<p class="text-center text-white mt-2">
 					Made with &hearts; by
 					<a
@@ -177,7 +373,8 @@
 						>Peter Kennedy</a
 					>
 				</p>
-			</footer>
-		</div>
-	</body>
+			</footer> -->
+    </div>
+</body>
+
 </html>

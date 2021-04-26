@@ -126,7 +126,7 @@ $(document).ready(function () {
         let inputAmount = parseInt(1);
         let newOrder = new Order(inputSize, inputSizeCost, inputCrust, inputCrustCost, inputTopping, inputToppingCost, inputAmount);
 
-        $('div#list').append('<div class="row"><div class="col-2"><p class="fs-5 mb-0">' + newOrder.pizzaAmount + 'x</p><div class="minus-icon"><div class="minus-sign text-center">-</div></div></div><div class="col-6"><p class="fs-5 mb-0">' + newOrder.pizzaSize + '</p><small>' + newOrder.pizzaCrust + ', ' + newOrder.pizzaTopping + '</small></div><div class="col-4 order-price"><p class="fs-5 mb-0">Ksh. ' + newOrder.orderCost() + '.00</p><div class="green-sign"><div class="plus-sign text-center">+</div></div></div></div> <hr>');
+        $('#list').append('<div class="row"><div class="col-2"><p class="fs-5 mb-0">' + newOrder.pizzaAmount + 'x</p><div class="minus-icon"><div class="minus-sign text-center">-</div></div></div><div class="col-6"><p class="fs-5 mb-0">' + newOrder.pizzaSize + '</p><small>' + newOrder.pizzaCrust + ', ' + newOrder.pizzaTopping + '</small></div><div class="col-4 order-price"><p class="fs-5 mb-0">Ksh. ' + newOrder.orderCost() + '.00</p><div class="green-sign"><div class="plus-sign text-center">+</div></div></div></div> <hr>');
         event.preventDefault();
 
         totalCost += newOrder.orderCost();
@@ -135,4 +135,9 @@ $(document).ready(function () {
 
     });
 
+    $('#delivery').click(function(){
+        alert("Please note that delivery will cost you an extra KES 200.00");
+        totalCost += 200;
+        $('.totalCost').html(totalCost);
+    });
 });

@@ -102,7 +102,7 @@
 												<div class="pic">
 													<img
 														class="img-fluid"
-														src="https://images.unsplash.com/photo-1590083745251-4fdb0b285c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80"
+														src="img/pizza2.jpg"
 														alt="Small Pizza"
 														srcset=""
 													/>
@@ -121,7 +121,11 @@
 															name="crust"
 															id="crustSmall"
 														>
-															<option value="" default disabled></option>
+															<option
+																value="no crust"
+																selected
+																disabled
+															></option>
 															<option value="Neapolitan Pizza Crust">
 																Neapolitan Pizza Crust (+KES 250.00)
 															</option>
@@ -143,7 +147,11 @@
 															name="toppingsSmall"
 															id="toppingsSmall"
 														>
-															<option value="" selected disabled></option>
+															<option
+																value="no toppings"
+																selected
+																disabled
+															></option>
 															<option value="Pepperoni">
 																Pepperoni (+KES 100.00)
 															</option>
@@ -229,7 +237,7 @@
 												<div class="pic">
 													<img
 														class="img-fluid"
-														src="https://images.unsplash.com/photo-1590083745251-4fdb0b285c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80"
+														src="img/pizza2.jpg"
 														alt="Small Pizza"
 														srcset=""
 													/>
@@ -248,7 +256,11 @@
 															name="crust"
 															id="crustMedium"
 														>
-															<option value="" default disabled></option>
+															<option
+																value="no crust"
+																selected
+																disabled
+															></option>
 															<option value="Neapolitan Pizza Crust">
 																Neapolitan Pizza Crust (+KES 250.00)
 															</option>
@@ -270,7 +282,11 @@
 															name="toppingsMedium"
 															id="toppingsMedium"
 														>
-															<option value="" default disabled></option>
+															<option
+																value="no toppings"
+																selected
+																disabled
+															></option>
 															<option value="Pepperoni">
 																Pepperoni (+KES 100.00)
 															</option>
@@ -354,7 +370,7 @@
 												<div class="pic">
 													<img
 														class="img-fluid"
-														src="https://images.unsplash.com/photo-1590083745251-4fdb0b285c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=778&q=80"
+														src="img/pizza2.jpg"
 														alt="Small Pizza"
 														srcset=""
 													/>
@@ -373,7 +389,11 @@
 															name="crust"
 															id="crustLarge"
 														>
-															<option value="" default disabled></option>
+															<option
+																value="no crust"
+																selected
+																disabled
+															></option>
 															<option value="Neapolitan Pizza Crust">
 																Neapolitan Pizza Crust (+KES 250.00)
 															</option>
@@ -395,7 +415,11 @@
 															name="toppings"
 															id="toppingsLarge"
 														>
-															<option value="" default disabled></option>
+															<option
+																value="no toppings"
+																selected
+																disabled
+															></option>
 															<option value="Pepperoni">
 																Pepperoni (+KES 100.00)
 															</option>
@@ -478,7 +502,7 @@
 									</div>
 									<div class="modal-body">
 										<div class="container-fluid">
-											<div class="list">
+											<!-- <div id="checkoutList">
 												<div class="row">
 													<div class="col-2">
 														<p class="fs-5 mb-0">1x</p>
@@ -492,45 +516,7 @@
 													</div>
 												</div>
 												<hr />
-												<div class="row">
-													<div class="col-2">
-														<p class="fs-5 mb-0">1x</p>
-													</div>
-													<div class="col-6">
-														<p class="fs-5 mb-0">Small Classic Pizza</p>
-														<small>BBQ Steak, Pepperoni</small>
-													</div>
-													<div class="col-4 order-price">
-														<p class="fs-5 mb-0">Ksh. 400.00</p>
-													</div>
-												</div>
-												<hr />
-												<div class="row">
-													<div class="col-2">
-														<p class="fs-5 mb-0">1x</p>
-													</div>
-													<div class="col-6">
-														<p class="fs-5 mb-0">Small Classic Pizza</p>
-														<small>BBQ Steak, Pepperoni</small>
-													</div>
-													<div class="col-4 order-price">
-														<p class="fs-5 mb-0">Ksh. 400.00</p>
-													</div>
-												</div>
-												<hr />
-												<div class="row">
-													<div class="col-2">
-														<p class="fs-5 mb-0">1x</p>
-													</div>
-													<div class="col-6">
-														<p class="fs-5 mb-0">Small Classic Pizza</p>
-														<small>BBQ Steak, Pepperoni</small>
-													</div>
-													<div class="col-4 order-price">
-														<p class="fs-5 mb-0">Ksh. 400.00</p>
-													</div>
-												</div>
-											</div>
+											</div> -->
 											<div id="total">
 												<div class="text-uppercase">Total</div>
 												<div class="text-uppercase">
@@ -542,6 +528,7 @@
 													<button
 														type="button"
 														class="btn btn-outline-success btn-block text-uppercase text-center"
+                                                        id="pickup"
 													>
 														Pickup
 													</button>
@@ -550,6 +537,7 @@
 													<button
 														type="button"
 														class="btn btn-outline-success btn-block text-uppercase text-center"
+                                                        id="delivery"
 													>
 														Delivery
 													</button>
@@ -562,6 +550,7 @@
 													id="location"
 													class="form-control"
 													placeholder="e.g. Roysambu, Nairobi"
+                                                    required
 												/>
 											</div>
 										</div>
@@ -574,7 +563,11 @@
 										>
 											Cancel
 										</button>
-										<button type="button" class="btn btn-success">
+										<button
+											type="button"
+											class="btn btn-success"
+											id="btnCheckout"
+										>
 											Checkout
 										</button>
 									</div>

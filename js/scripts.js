@@ -173,8 +173,13 @@ $(document).ready(function () {
                 alert("Please select whether you want delivery or you would prefer to pick up your order.")
             }
         }else{
-            alert("Please input a delivery location.")
+            alert("Please tell us where you are.")
         }
         event.preventDefault();
+    });
+
+    $('.minus-icon').click(function(e){
+        alert("Oops!");
+        e.preventDefault();
     });
 });

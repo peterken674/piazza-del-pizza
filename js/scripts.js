@@ -19,13 +19,13 @@ $(document).ready(function () {
         let inputSizeCost = parseInt(245);
         let inputCrust = $('#crustSmall').val();
         if (inputCrust == "Neapolitan Pizza Crust") {
-            var inputCrustCost = parseInt(250);
+            var inputCrustCost = parseInt(125);
         } else if (inputCrust == "New York-Style Pizza Crust") {
-            var inputCrustCost = parseInt(220);
+            var inputCrustCost = parseInt(110);
         } else if (inputCrust == "St. Louis Pizza Crust") {
-            var inputCrustCost = parseInt(260);
+            var inputCrustCost = parseInt(130);
         } else if (inputCrust == "Flatbread Crust") {
-            var inputCrustCost = parseInt(170);
+            var inputCrustCost = parseInt(85);
         } else {
             var inputCrustCost = parseInt(0);
         }
@@ -33,13 +33,13 @@ $(document).ready(function () {
         let inputTopping = $('#toppingsSmall').val();
 
         if (inputTopping == "Pepperoni") {
-            var inputToppingCost = parseInt(100);
+            var inputToppingCost = parseInt(50);
         } else if (inputTopping == "Supreme") {
-            var inputToppingCost = parseInt(200);
+            var inputToppingCost = parseInt(100);
         } else if (inputTopping == "Hawaiian (Ham & Pineapple") {
-            var inputToppingCost = parseInt(120);
+            var inputToppingCost = parseInt(60);
         } else if (inputTopping == "BBQ Meatlovers") {
-            var inputToppingCost = parseInt(160);
+            var inputToppingCost = parseInt(80);
         } else {
             var inputToppingCost = parseInt(0);
         }
@@ -99,13 +99,13 @@ $(document).ready(function () {
         let inputSizeCost = parseInt(1400);
         let inputCrust = $('#crustLarge').val();
         if (inputCrust == "Neapolitan Pizza Crust") {
-            var inputCrustCost = parseInt(250);
+            var inputCrustCost = parseInt(300);
         } else if (inputCrust == "New York-Style Pizza Crust") {
-            var inputCrustCost = parseInt(220);
+            var inputCrustCost = parseInt(270);
         } else if (inputCrust == "St. Louis Pizza Crust") {
-            var inputCrustCost = parseInt(260);
+            var inputCrustCost = parseInt(310);
         } else if (inputCrust == "Flatbread Crust") {
-            var inputCrustCost = parseInt(170);
+            var inputCrustCost = parseInt(220);
         } else {
             var inputCrustCost = parseInt(0);
         }
@@ -113,13 +113,13 @@ $(document).ready(function () {
         let inputTopping = $('#toppingsLarge').val();
 
         if (inputTopping == "Pepperoni") {
-            var inputToppingCost = parseInt(100);
+            var inputToppingCost = parseInt(150);
         } else if (inputTopping == "Supreme") {
-            var inputToppingCost = parseInt(200);
+            var inputToppingCost = parseInt(250);
         } else if (inputTopping == "Hawaiian (Ham & Pineapple") {
-            var inputToppingCost = parseInt(120);
+            var inputToppingCost = parseInt(170);
         } else if (inputTopping == "BBQ Meatlovers") {
-            var inputToppingCost = parseInt(160);
+            var inputToppingCost = parseInt(210);
         } else {
             var inputToppingCost = parseInt(0);
         }
